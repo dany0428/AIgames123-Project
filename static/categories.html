@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categories | AIGames123.com</title>
+  <meta name="description" content="Browse AI-generated games by category.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect width="14" height="20" x="5" y="2" rx="2" ry="2"/>
+            <path d="M12 18h.01"/>
+          </svg>
+        </div>
+        <span class="logo-text">AIGames123</span>
+      </a>
+      
+      <nav class="nav-desktop">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="categories.html" class="nav-link active">Categories</a>
+        <a href="upload.html" class="nav-link">Upload</a>
+      </nav>
+      
+      <div class="header-actions">
+        <a href="upload.html" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="17 8 12 3 7 8"/>
+            <line x1="12" x2="12" y1="3" y2="15"/>
+          </svg>
+          Upload Game
+        </a>
+        <button class="btn btn-ghost mobile-menu-btn" onclick="toggleMobileMenu()">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="4" x2="20" y1="12" y2="12"/>
+            <line x1="4" x2="20" y1="6" y2="6"/>
+            <line x1="4" x2="20" y1="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="categories.html" class="mobile-nav-link active">Categories</a>
+      <a href="upload.html" class="mobile-nav-link">Upload</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-header">
+      <h1>Game Categories</h1>
+      <p>Browse games by your favorite genre</p>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section">
+      <div class="categories-container">
+        <div class="categories-grid">
+          <div class="category-card" onclick="window.location.href='index.html'">
+            <div class="category-icon">🧩</div>
+            <h3>Puzzle</h3>
+            <p>Brain teasers, logic games, and mind-bending challenges.</p>
+            <span class="category-count">124 games</span>
+          </div>
+          
+          <div class="category-card" onclick="window.location.href='index.html'">
+            <div class="category-icon">⚔️</div>
+            <h3>Action</h3>
+            <p>Fast-paced gameplay, combat, and exciting adventures.</p>
+            <span class="category-count">98 games</span>
+          </div>
+          
+          <div class="category-card" onclick="window.location.href='index.html'">
+            <div class="category-icon">🏗️</div>
+            <h3>Simulation</h3>
+            <p>Build, manage, and simulate real-world scenarios.</p>
+            <span class="category-count">76 games</span>
+          </div>
+          
+          <div class="category-card" onclick="window.location.href='index.html'">
+            <div class="category-icon">🎯</div>
+            <h3>Arcade</h3>
+            <p>Classic arcade-style games with simple controls.</p>
+            <span class="category-count">89 games</span>
+          </div>
+          
+          <div class="category-card" onclick="window.location.href='index.html'">
+            <div class="category-icon">🏎️</div>
+            <h3>Racing</h3>
+            <p>Speed through tracks and compete for the best time.</p>
+            <span class="category-count">45 games</span>
+          </div>
+          
+          <div class="category-card" onclick="window.location.href='index.html'">
+            <div class="category-icon">🎲</div>
+            <h3>Board & Card</h3>
+            <p>Digital versions of classic board and card games.</p>
+            <span class="category-count">62 games</span>
+          </div>
+          
+          <div class="category-card" onclick="window.location.href='index.html'">
+            <div class="category-icon">🌿</div>
+            <h3>Relaxing</h3>
+            <p>Calm, peaceful games for unwinding and de-stressing.</p>
+            <span class="category-count">38 games</span>
+          </div>
+          
+          <div class="category-card" onclick="window.location.href='index.html'">
+            <div class="category-icon">🎨</div>
+            <h3>Creative</h3>
+            <p>Drawing, music, and artistic expression games.</p>
+            <span class="category-count">29 games</span>
+          </div>
+          
+          <div class="category-card" onclick="window.location.href='index.html'">
+            <div class="category-icon">🧠</div>
+            <h3>Educational</h3>
+            <p>Learn while you play with these educational games.</p>
+            <span class="category-count">41 games</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="14" height="20" x="5" y="2" rx="2" ry="2"/>
+                <path d="M12 18h.01"/>
+              </svg>
+            </div>
+            <span class="logo-text">AIGames123</span>
+          </a>
+          <p class="footer-description">
+            The home for AI-generated games. Play, create, and share games made with artificial intelligence.
+          </p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Platform</h4>
+            <a href="index.html">Browse Games</a>
+            <a href="categories.html">Categories</a>
+            <a href="upload.html">Upload Game</a>
+          </div>
+          <div class="footer-column">
+            <h4>Company</h4>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Blog</a>
+          </div>
+          <div class="footer-column">
+            <h4>Legal</h4>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 AIGames123. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

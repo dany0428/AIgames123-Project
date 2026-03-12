@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIGames123.com | AI-Generated Games, Instantly Playable</title>
+  <meta name="description" content="Discover and play AI-generated games. Upload your own HTML games created with AI and share them with the world.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect width="14" height="20" x="5" y="2" rx="2" ry="2"/>
+            <path d="M12 18h.01"/>
+          </svg>
+        </div>
+        <span class="logo-text">AIGames123</span>
+      </a>
+      
+      <nav class="nav-desktop">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="categories.html" class="nav-link">Categories</a>
+        <a href="upload.html" class="nav-link">Upload</a>
+      </nav>
+      
+      <div class="header-actions">
+        <a href="upload.html" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="17 8 12 3 7 8"/>
+            <line x1="12" x2="12" y1="3" y2="15"/>
+          </svg>
+          Upload Game
+        </a>
+        <button class="btn btn-ghost mobile-menu-btn" onclick="toggleMobileMenu()">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="4" x2="20" y1="12" y2="12"/>
+            <line x1="4" x2="20" y1="6" y2="6"/>
+            <line x1="4" x2="20" y1="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="mobile-nav-link active">Home</a>
+      <a href="categories.html" class="mobile-nav-link">Categories</a>
+      <a href="upload.html" class="mobile-nav-link">Upload</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-container">
+        <span class="hero-badge">AI-Powered Gaming Platform</span>
+        <h1 class="hero-title">Play Games Made by AI</h1>
+        <p class="hero-subtitle">
+          Discover a new world of instantly playable games created by artificial intelligence. 
+          Upload your own AI-generated HTML games and share them with players worldwide.
+        </p>
+        <div class="hero-search">
+          <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"/>
+            <path d="m21 21-4.3-4.3"/>
+          </svg>
+          <input type="text" class="search-input" placeholder="Search games..." id="searchInput">
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-value">500+</span>
+            <span class="stat-label">Games</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">10K+</span>
+            <span class="stat-label">Players</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">50+</span>
+            <span class="stat-label">Categories</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Games Section -->
+    <section class="games-section">
+      <div class="games-container">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">Featured Games</h2>
+            <p class="section-subtitle">Trending AI-generated games this week</p>
+          </div>
+          <div class="filter-buttons">
+            <button class="filter-btn active" onclick="filterGames('all')">All</button>
+            <button class="filter-btn" onclick="filterGames('puzzle')">Puzzle</button>
+            <button class="filter-btn" onclick="filterGames('action')">Action</button>
+            <button class="filter-btn" onclick="filterGames('simulation')">Simulation</button>
+          </div>
+        </div>
+        
+        <div class="games-grid" id="gamesGrid">
+          <!-- Games will be inserted here by JavaScript -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="14" height="20" x="5" y="2" rx="2" ry="2"/>
+                <path d="M12 18h.01"/>
+              </svg>
+            </div>
+            <span class="logo-text">AIGames123</span>
+          </a>
+          <p class="footer-description">
+            The home for AI-generated games. Play, create, and share games made with artificial intelligence.
+          </p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Platform</h4>
+            <a href="index.html">Browse Games</a>
+            <a href="categories.html">Categories</a>
+            <a href="upload.html">Upload Game</a>
+          </div>
+          <div class="footer-column">
+            <h4>Company</h4>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Blog</a>
+          </div>
+          <div class="footer-column">
+            <h4>Legal</h4>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 AIGames123. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
